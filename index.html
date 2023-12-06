@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=1, minimum-scale=.25, user-scalable=no" />
+    <title>PacMan Clone</title>
+    <link type="text/css" rel="stylesheet" href="style.css?v=0.01" />
+  </head>
+  <body class="">
+    <div style="display: none">
+      <img id="animation-pacman" src="./images/pacman.gif" width="140" height="20" />
+      <img id="animation-ghost" src="./images/ghost.png" width="140" height="20" />
+    </div>
+    <div class="game">
+      <!-- --------------- -->
+      <!-- BOARD           -->
+      <!-- --------------- -->
+      <canvas id="board"></canvas>
+      <!-- --------------- -->
+      <!-- KEYS (MOBILE)   -->
+      <!-- --------------- -->
+      <div id="keys" class="show-mobile">
+        <div class="key long" data-key="ArrowLeft" id="key-left">←</div>
+        <div class="key-column">
+          <div class="key wide" data-key="ArrowUp" id="key-up">↑</div>
+          <div class="key wide" data-key="ArrowDown" id="key-down">↓</div>
+        </div>
+        <div class="key long" data-key="ArrowRight" id="key-right">→</div>
+      </div>
+      <!-- --------------- -->
+    </div>
+    <script type="module">
+      import { init } from './js/game.js?v=0.01';
+      // Wait for the page to load and then initialize the game
+      (() => init())();
+    </script>
+  </body>
+</html>
