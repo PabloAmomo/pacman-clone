@@ -13,7 +13,7 @@ To begin your journey with Pac-Man Classic, follow these simple steps:
 - **Direct Download:** Navigate to the GitHub page for Pac-Man Classic. Find the 'Code' button and select 'Download ZIP'. Once downloaded, extract the ZIP file to your desired location.
 - **Clone the Repository:** If you're familiar with Git, you can clone the repository using the following command in your terminal or command prompt:
 ```
-git clone [URL of the Pac-Man Classic repository]
+git clone https://github.com/PabloAmomo/pacman-clone
 ```
 2. **Launching the Game:** Once you have the files on your machine, simply open the index.html file in your preferred web browser. This file serves as the entry point to the game, setting up the entire Pac-Man experience right in your browser.
 
